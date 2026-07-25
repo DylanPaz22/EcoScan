@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>EcoScan AI</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <div class="container">
+    <header class="hero">
+      <img src="assets/logo.png" alt="Logo EcoScan" class="logo-img" onerror="this.style.display='none'" />
+      <div class="logo-emoji">♻</div>
+      <h1>EcoScan AI</h1>
+        <p>Clasifica residuos, aprende a reciclar y cuida el medio ambiente</p>
+      <div class="hero-buttons">
+        <button class="btn-principal" onclick="document.getElementById('objeto').focus()">Comenzar</button>
+        <button class="btn-secundario" onclick="limpiarBusqueda()">Limpiar</button>
+      </div>
+    </header>
+
+    <section class="stats-card">
+      <div class="stat">
+        <span id="totalResiduos">0</span>
+        <small>Objetos</small>
+      </div>
+      <div class="stat">
+        <span>7</span>
+        <small>Categorías</small>
+      </div>
+      <div class="stat">
+        <span>♻</span>
+        <small>EcoScan</small>
+      </div>
+    </section>
+
+    <section class="card">
+      <label for="objeto">Escribe un objeto:</label>
+      <input type="text" id="objeto" placeholder="Ej. botella de plástico" oninput="buscarResiduo()" />
+
+      <div class="chips">
+        <button class="chip" onclick="filtrarCategoria('Todos')">Todos</button>
+        <button class="chip" onclick="filtrarCategoria('Plástico')">Plástico</button>
+        <button class="chip" onclick="filtrarCategoria('Papel')">Papel</button>
+        <button class="chip" onclick="filtrarCategoria('Vidrio')">Vidrio</button>
+        <button class="chip" onclick="filtrarCategoria('Metal')">Metal</button>
+        <button class="chip" onclick="filtrarCategoria('Orgánico')">Orgánico</button>
+        <button class="chip" onclick="filtrarCategoria('Electrónico')">Electrónico</button>
+      </div>
+
+      <div id="resultado" class="resultado"></div>
+      <div id="lista" class="lista"></div>
+    </section>
+
+    <section class="tip-card">
+      <h2>Consejo ecológico del día</h2>
+      <p id="tip"></p>
+    </section>
+
+    <section class="about-card">
+      <h2>Acerca del proyecto</h2>
+      <p><strong>EcoScan AI</strong> ayuda a clasificar residuos de forma rápida y educativa.</p>
+      <p><strong>Objetivo:</strong> promover el reciclaje correcto y el cuidado del medio ambiente.</p>
+      <p><strong>Proyecto para:</strong> Expocarrera 2026</p>
+    </section>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>

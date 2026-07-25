@@ -1,0 +1,201 @@
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: linear-gradient(135deg, #e8f5e9, #ffffff);
+  color: #1b5e20;
+}
+
+.container {
+  max-width: 980px;
+  margin: 30px auto;
+  padding: 20px;
+}
+
+.hero {
+  text-align: center;
+  margin-bottom: 22px;
+}
+
+.logo-img {
+  width: 120px;
+  height: 120px;
+  object-fit: contain;
+  margin-bottom: 10px;
+}
+
+.logo-emoji {
+  font-size: 64px;
+  margin-bottom: 8px;
+}
+
+h1 {
+  margin: 0;
+  font-size: 44px;
+}
+
+p {
+  margin-top: 8px;
+  font-size: 18px;
+}
+
+.hero-buttons {
+  display: flex;
+  gap: 12px;
+  justify-content: center;
+  margin-top: 18px;
+  flex-wrap: wrap;
+}
+
+.btn-principal,
+.btn-secundario {
+  border: none;
+  padding: 12px 18px;
+  border-radius: 12px;
+  cursor: pointer;
+  font-weight: bold;
+  font-size: 15px;
+}
+
+.btn-principal {
+  background: #2e7d32;
+  color: white;
+}
+
+.btn-principal:hover {
+  background: #1b5e20;
+}
+
+.btn-secundario {
+  background: #e8f5e9;
+  color: #1b5e20;
+}
+
+.btn-secundario:hover {
+  background: #c8e6c9;
+}
+
+.stats-card,
+.card,
+.tip-card,
+.about-card {
+  background: white;
+  padding: 28px;
+  border-radius: 22px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.12);
+}
+
+.stats-card {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
+  gap: 14px;
+  margin-bottom: 18px;
+}
+
+.stat {
+  background: #f1f8e9;
+  border-radius: 16px;
+  padding: 18px;
+  text-align: center;
+}
+
+.stat span {
+  display: block;
+  font-size: 32px;
+  font-weight: bold;
+}
+
+.stat small {
+  font-size: 14px;
+  color: #2e7d32;
+}
+
+.tip-card,
+.about-card {
+  margin-top: 18px;
+}
+
+label {
+  display: block;
+  margin-bottom: 10px;
+  font-weight: bold;
+  font-size: 16px;
+}
+
+input {
+  width: 100%;
+  padding: 15px;
+  border: 1px solid #c8e6c9;
+  border-radius: 12px;
+  margin-bottom: 16px;
+  font-size: 16px;
+  outline: none;
+}
+
+input:focus {
+  border-color: #2e7d32;
+}
+
+.chips {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-bottom: 18px;
+}
+
+.chip {
+  border: none;
+  background: #e8f5e9;
+  color: #1b5e20;
+  padding: 10px 14px;
+  border-radius: 999px;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.chip:hover {
+  background: #c8e6c9;
+}
+
+.resultado {
+  margin-top: 10px;
+  padding: 18px;
+  border-radius: 14px;
+  background: #f1f8e9;
+  font-size: 18px;
+  line-height: 1.6;
+  min-height: 60px;
+}
+
+.tarjeta {
+  margin-top: 12px;
+  padding: 16px;
+  border-left: 6px solid #2e7d32;
+  background: #ffffff;
+  border-radius: 12px;
+}
+
+.lista {
+  margin-top: 18px;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 14px;
+}
+
+.item {
+  background: #fff;
+  border: 1px solid #e0e0e0;
+  border-radius: 16px;
+  padding: 14px;
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.06);
+}
+
+.item .icono {
+  font-size: 34px;
+  margin-bottom: 8px;
+}
+
+.tip-card h2,
+.about-card h2 {
+  margin-top: 0;
+  color: #2e7d32;
+}
